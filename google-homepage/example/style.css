@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    border-style: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a, p{
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header, footer {
+    height: 60px;
+}
+
+.container header #left-header {
+    float: left;
+    padding-left: 11px;
+    padding-top: 21px;
+}
+
+.container header #left-header a {
+    padding-left: 14px;
+    opacity: 0.75;
+}
+
+.container header #right-header {
+    float: right;
+    padding-right: 15px;
+    padding-top: 15px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.container header #right-header a {
+    padding-right: 15px;
+}
+
+.main .logo {
+    margin-top: 29px;
+    width: 272px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#googleLogo {
+    margin: 0 auto;
+    padding-top: 109px;
+    width: 272px;
+    height: 92px;
+}
+
+#userHeadshot {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+#googleApps {
+    width: 30px;
+    height: 30px;
+    color: gray;
+}
+
+#googleAlert {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    padding: 3px 3px;
+    margin: 3px 3px 3px 3px;
+    background-color: gray;
+    filter:invert(100%)
+}
+
+#googleMic {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+form {
+    padding-top: 23px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+form #searchbox {
+    width: 584px;
+    height: 44px;
+    border: 1px solid lightgrey;
+    display: flex;
+    z-index: 300;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding-right: 1em;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 0px 3px 10px -5px;
+    align-items: center;
+}
+
+form #searchbox:hover {
+    box-shadow: 0px 4px 4px -4px;
+}
+
+input[type=text] {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+form input[type="submit"] {
+    width: 142.58px;
+    height: 36px;
+    padding: 0;
+    background: #f2f2f2;
+    border-radius: 2px;
+    border: 0;
+    color: #757575;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 13px; 
+}
+
+form input[type="submit"]:hover {
+    border: thin solid lightgrey;
+    box-shadow: 0 2px 15px -7px;
+    color: black; 
+    cursor: pointer;
+}
+
+form input[type="submit"]:nth-of-type(1) {
+    margin-right: 6px; 
+}
+
+form p {
+    margin-top: 28px;
+}
+
+form p #fr {
+    text-decoration: none;
+    color: #1a0dab;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-top: 1px solid #e4e4e4;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+
+.main-footer {
+    padding-bottom: 13px;
+    padding-left: 30px;
+}
+
+.main-footer p {
+    font-size: 15px;
+    color: rgba(0,0,0,.54);
+}
+
+.sub-footer {
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    background-color: #F2F2F2;
+    border-top: 1px solid #e4e4e4;
+} 
+
+#left-footer {
+    float: left;
+    padding-left: 8px;
+    padding-top: 10px;
+}
+
+#left-footer a {
+    padding-left: 22px;
+    color: rgba(0,0,0,.54);
+}
+
+#right-footer {
+    float: right;
+    padding-right: 8px;
+    padding-top: 10px;
+}
+
+#right-footer a {
+    padding-right: 22px;
+    color: rgba(0,0,0,.54);
+}

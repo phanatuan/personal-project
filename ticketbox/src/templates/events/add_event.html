@@ -1,0 +1,52 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Add Event Form goes here</h1>
+
+<form method="POST">
+    {{ form.hidden_tag() }}
+
+    <div class="form-group">
+    {{ form.venue.label }} {{ form.venue(class='form-control')}}
+    </div>
+
+    <div class="form-group">
+    {{ form.address.label }} {{ form.address(class='form-control')}}
+    </div>
+
+    <div class="form-group">
+    {{ form.city.label }} {{ form.city(class='form-control')}}
+    </div>
+
+    <div class="form-group">
+    {{ form.event_name.label }} {{ form.event_name(class='form-control')}}
+    </div>
+
+    <div class="form-group">
+    {{ form.event_description.label }} {{ form.event_description(class='form-control')}}
+    </div>
+
+    <div class="form-group">
+    {{ form.event_type.label }} {{ form.event_type(class='form-control')}}
+    </div>
+
+    <div class="form-group">
+    {{ form.organizer_name.label }} {{ form.organizer_name(class='form-control')}}
+    </div>
+
+    <div class="form-group">
+    {{ form.organizer_detail.label }}
+    {{ form.organizer_detail(class='form-control')}}
+    </div>
+
+    <div class="form-group">
+    {{ form.organizer_contact.label }}
+    {{ form.organizer_contact(class='form-control')}}
+    </div>
+
+    <div class="form-group">
+    {{ form.organizer_email.label }}
+    {{ form.organizer_email(class='form-control')}}
+    </div>
+
+    {{ form.submit() }}
+</form>
+{% endblock %}

@@ -1,0 +1,53 @@
+type Promotion { 
+  id: ID! @id
+  brand: Brand! @relation(name: "BrandPromotion", onDelete: SET_NULL)
+  title: String!
+  promoType: PromoType
+  promoCode: String
+  isFeatured: Boolean! @default(value: false)
+  category: Category
+  promoStatus: PromoStatus @default(value: ACTIVE)
+  expiredAt: DateTime
+  affiliateUrl: String
+  createdAt: DateTime @createdAt
+  updatedAt: DateTime @updatedAt
+}
+
+type User { 
+  id: ID! @id
+  email: String! @unique 
+  password: String
+  role: UserRole @default(value: NORMAL)
+}
+
+
+type Category { 
+  id: ID! @id
+  name: String!
+  description: String!
+  promotions: [Promotion!]
+}
+
+type Brand { 
+  id: ID! @id
+  name: String! 
+  description: String!
+  promotions: [Promotion]! @relation(name: "BrandPromotion", onDelete: CASCADE)
+  createdAt: DateTime @createdAt
+  updatedAt: DateTime @updatedAt
+}
+
+enum PromoStatus { 
+  ACTIVE
+  EXPIRED
+}
+
+enum PromoType { 
+  COUPON
+  DEALS
+}
+
+enum UserRole { 
+  ADMIN
+  NORMAL
+}

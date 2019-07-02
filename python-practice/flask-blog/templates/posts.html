@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>All Blog Posts</h1>
+<ul>
+    {% for post in posts %}
+        <li> {{ post.title }}, {{ post.body }}, {{post.author_name}}</li> 
+        <ul>
+        {% for comment in comments %}
+            {% if comment.post_id == post.id %}
+                <li>{{ comment.comment_body}}</li>
+            {% endif %}
+        {% endfor %}
+        </ul>         
+    {% endfor %}
+    
+</ul>
+{% endblock %}
+

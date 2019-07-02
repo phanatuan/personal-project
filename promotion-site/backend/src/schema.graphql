@@ -1,0 +1,70 @@
+scalar DateTime
+
+type Query {
+  brands: [Brand!]!
+  promotions: [Promotion!]!
+}
+
+type Mutation { 
+  login(data: loginUserInput!): User
+  createUser(data: createUserInput!): User
+}
+
+type User { 
+  email: String! 
+  password: String
+}
+
+type Post {
+  id: ID!
+  published: Boolean!
+  title: String!
+  content: String!
+}
+
+type Brand { 
+  id: ID!
+  name: String!
+  description: String!
+  promotions: [Promotion!]!
+}
+
+type Category { 
+  id: ID! 
+  name: String!
+  description: String!
+  promotions: [Promotion!]
+}
+
+type Promotion { 
+  id: ID! 
+  brand: Brand! 
+  title: String!
+  promoType: PromoType
+  promoCode: String
+  isFeatured: Boolean!
+  category: Category
+  promoStatus: PromoStatus
+  expiredAt: DateTime
+  affiliateUrl: String
+}
+
+input loginUserInput { 
+  email: String!
+  password: String!
+}
+
+input createUserInput { 
+  email: String!
+  password: String!
+}
+
+enum PromoStatus { 
+  ACTIVE
+  EXPIRED
+}
+
+enum PromoType { 
+  COUPON
+  DEALS
+}

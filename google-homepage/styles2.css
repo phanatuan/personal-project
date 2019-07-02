@@ -1,0 +1,64 @@
+body { 
+    font-size: 13px;
+    background-color: #fff;
+}
+
+
+nav { 
+    height: 30px;
+    background-color: rgb(34, 34, 34);
+    width: 1440px
+}
+
+section {
+    height: 805px;
+    background-color: white;
+}
+
+footer { 
+
+    height: 80px; 
+    background-color: rgba(0,0,0,.54);
+
+}
+
+.container { 
+    height: inherit;
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px; 
+    display: flex;
+    /* background-color: blacks */
+}
+
+section.container { 
+    flex-direction: column;
+    justify-content: center;
+}
+
+#google-logo { 
+    margin: 0 auto;
+    height: 92px;
+    width: 272px;
+    padding-top: 109px;
+    
+}
+
+.center { 
+    display: block;
+    margin: 0 auto;
+}
+
+.search-form { 
+    display: flex; 
+    padding: 5px 8px 0px 20px;
+    width: 554px;
+    height: 39px;
+    color: rgb(34, 34, 34);
+}
+
+.button-group { 
+    display: block; 
+    height: 58px; 
+    width: 571px; 
+}

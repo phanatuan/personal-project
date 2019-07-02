@@ -1,0 +1,10 @@
+.hash_tag { 
+    color: red;
+}
+
+.reduce-size { 
+    max-width: 113px;
+    height: 113px;
+    width: auto;
+    /* height: auto; */
+}

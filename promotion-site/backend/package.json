@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "prisma": "prisma",
+    "get-schema": "graphql get-schema -p graphql-prisma",
+    "seed": "node ./src/helpers/seed.js"
+
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "apollo-server": "^2.5.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "cloudinary": "^1.14.0",
+    "faker": "^4.1.0",
+    "graphql-yoga": "1.17.4",
+    "prisma-binding": "^2.3.11",
+    "prisma-client-lib": "1.33.0"
+  },
+  "devDependencies": {
+    "prisma": "1.33.0"
+  }
+}
